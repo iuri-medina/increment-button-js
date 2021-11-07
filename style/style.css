@@ -1,0 +1,67 @@
+:root {
+    --button-width: 150px;
+    --button-height: 50px;
+    --button-color: #2359ec;
+    --shadow: 0, 2px, 13px rgba(0, 0, 0, 0.2)
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    background-color: #202124;
+    color: #fff;
+
+}
+
+#container {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #303134;
+}
+
+div {
+    display: block;
+    padding: 10px;
+}
+
+.counter {
+    width: 35px;
+    margin: 20px auto;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    padding-top: 10px;
+}
+
+button {
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Ubuntu', Arial, sans-serif;
+    color: #FFF;
+    outline: none;
+    /*transition: 0.3s;*/
+}
+
+button:hover {
+    transform: scale(1.04);
+    background-color: var(--button-color)
+}
+
+button:active {
+    transform: scale(0.98)
+}
